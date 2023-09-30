@@ -9,9 +9,11 @@
 4. After all the PODS of PROMETHEUS, ALERTMANAGER, MONGODB-EXPORTER and GRAFANA and there services are up and running expose there service by following commands:
   #kubectl expose service prometheus-kube-prometheus-prometheus --type=NodePort --target-port=9090 --name=< provide the name which you want to give for exposed prometheus-nodeport-service >
   #kubectl expose service < grafana-service name > --type=NodePort --target-port=3000 --name=< provide the name which you want to give for exposed grafana-nodeport-service >
-5. Connect to the prometheus and grafana using nodes-ipaddress:targetport.
-6. Once login was successfully completed import the #MongoDB-Grafana-custom-dashboard.json dashboard into grafana.
-7. The MongoDB-Grafana-custom-dashboard.json dashboard provides information of:
+5. Connect to the prometheus and grafana using nodes-ipaddress:targetport and grafana requries username and password.
+     USERNAME = admin
+     PASSWORD = prom-operator
+7. Once login was successfully completed import the #MongoDB-Grafana-custom-dashboard.json dashboard into grafana.
+8. The MongoDB-Grafana-custom-dashboard.json dashboard provides information of:
    1.Node Summary.
      a.RAM.
      b.Disk capacity.
