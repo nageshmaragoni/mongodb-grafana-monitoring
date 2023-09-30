@@ -1,0 +1,9 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: gke-storage
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-standard  # You can specify the type of Google Cloud PD here
+reclaimPolicy: Delete  # Change this as needed, 'Delete' will delete the PV on PVC deletion
+volumeBindingMode: Immediate  # Use 'Immediate' if desired
