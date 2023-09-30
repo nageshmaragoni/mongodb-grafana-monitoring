@@ -12,21 +12,21 @@
 5. Connect to the prometheus and grafana using nodes-ipaddress:targetport.
 6. Once login was successfully completed import the #MongoDB-Grafana-custom-dashboard.json dashboard into grafana.
 7. The MongoDB-Grafana-custom-dashboard.json dashboard provides information of:
-   A.Node Summary.
+   1.Node Summary.
      a.RAM.
      b.Disk capacity.
      c.Memory available.
      d.Disk space available.
      e.CPU usge.
-   B.Replicaset Metrics.
+   2.Replicaset Metrics.
      a.Uptime.
      b.connections.
      c.Members Health.
      d.Member state.
      e.Replicaset Query Operations.
-   C.Query Metrics.
+   3.Query Metrics.
      a.Document Operations.
-   D.Resource Metrics.
+   4.Resource Metrics.
      a.Network I/O.
      b.Disk I/O.
      c.OPlogSize.
